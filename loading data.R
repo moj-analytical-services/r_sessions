@@ -24,7 +24,8 @@ library(botor)
 library(ggplot2)
 library(plotly)
 library(janitor)
-
+#comment
+#New work
 
 #Step 6:
 ##Load data into R
@@ -48,10 +49,7 @@ df_combined <- df1_tidied %>%
 
 ggplot(data = df_combined, mapping = aes(area_directorate, count_staff))+
   geom_col()+
-  facet_wrap(~months_sop)+
-  theme(legend.position="none",
-        strip.background=element_rect(colour="black",
-                                      fill="yellow"))
+  facet_wrap(~months_sop)
 
   
 
